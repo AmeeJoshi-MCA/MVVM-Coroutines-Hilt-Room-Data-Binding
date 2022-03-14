@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    app:startDestination="@id/album_list">
+
+    <fragment
+        android:id="@+id/album_list"
+        android:name="com.myapplication.views.albumList.AlbumListFragment"
+        tools:layout="@layout/fragment_album">
+        <action
+            android:id="@+id/action_albums_list_to_album_details"
+            app:destination="@id/album_details">
+            <argument
+                android:name="albumId"
+                app:argType="integer"
+                android:defaultValue="1" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/album_details"
+        android:name="com.myapplication.views.albumDetails.AlbumDetailsFragment"
+        tools:layout="@layout/fragment_album_detail">
+        <argument
+            android:name="albumId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>
+

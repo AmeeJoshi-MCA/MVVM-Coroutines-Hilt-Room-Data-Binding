@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Albums</string>
+    <string name="all_album">All</string>
+    <string name="fav_album">Favorite</string>
+
+</resources>
