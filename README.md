@@ -51,7 +51,9 @@ You can open the project in Android studio and press run.
 
 ## Note
 1 Apart from album list and album detail, Like and Dislike feature is implemented
+
   User can select favorite from option menu.
+  
   Album data store in room database so app will work online and offline both.
 
 
