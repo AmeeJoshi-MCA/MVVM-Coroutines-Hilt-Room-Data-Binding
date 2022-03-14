@@ -19,7 +19,7 @@ class AlbumDetailsViewModel @Inject constructor(
 
     fun getDetails(albumId: Int) = albumDetailsRepository.getDetails(albumId)
 
-    fun refreshUserDetails(albumId: Int) = viewModelScope.launch(Dispatchers.IO) {
+    fun refreshDetails(albumId: Int) = viewModelScope.launch(Dispatchers.IO) {
         albumDetailsRepository.refreshAlbumDetailList(albumId)
     }
 

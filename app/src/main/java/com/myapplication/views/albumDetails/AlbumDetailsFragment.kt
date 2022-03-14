@@ -43,7 +43,7 @@ class AlbumDetailsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel.refreshUserDetails(args.albumId)
+        viewModel.refreshDetails(args.albumId)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
