@@ -1,6 +1,6 @@
 # Android-Sample project
 This repository contains a sample project in Kotlin to demonstrate AndroidX, MVVM, Coroutines,
- Hilt, Room, Data Binding, View Binding, Retrofit, Moshi and Repository pattern
+ Hilt, Room, Data Binding, View Binding, Retrofit, Moshi, Navigation Graph and Repository pattern
 
 ## How to build on your environment
 You can open the project in Android studio and press run.
