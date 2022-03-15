@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="itemDetail"
             type="com.myapplication.domain.AlbumDetail" />
@@ -21,18 +22,27 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                app:imageUrl="@{itemDetail.url}"
-                android:scaleType="fitXY"
                 android:adjustViewBounds="true"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:scaleType="fitXY"
+                app:imageUrl="@{itemDetail.url}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@{itemDetail.title}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/image" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

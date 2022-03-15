@@ -22,7 +22,7 @@ interface AlbumDao {
     fun insertAlbumDetail(album: List<DatabaseAlbumDetails>)
 
     @Insert(onConflict = OnConflictStrategy.ABORT)
-    suspend fun insertAlbum(item: DatabaseAlbumListItem)
+    fun insertAlbum(item: DatabaseAlbumListItem)
 
     @Update
     suspend fun updateAlbum(item: DatabaseAlbumListItem)

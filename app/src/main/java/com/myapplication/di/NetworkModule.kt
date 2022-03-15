@@ -43,9 +43,4 @@ object NetworkModule {
     fun provideAlbumApiService(retrofit: Retrofit): AlbumService =
         retrofit.create(AlbumService::class.java)
 
-//    @Provides
-//    @Singleton
-//    fun provideAlbumDetailsService(retrofit: Retrofit): AlbumService =
-//        retrofit.create(AlbumDetailsService::class.java)
-
 }

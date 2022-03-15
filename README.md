@@ -1,6 +1,6 @@
 # Android-Sample project
 This repository contains a sample project in Kotlin to demonstrate AndroidX, MVVM, Coroutines,
- Hilt, Room, Data Binding, View Binding, Retrofit, Moshi and Repository pattern
+ Hilt, Room, Data Binding, View Binding, Retrofit, Moshi ,  Repository pattern and Test cases using Hilt.
 
 ## How to build on your environment
 You can open the project in Android studio and press run.
@@ -49,11 +49,15 @@ You can open the project in Android studio and press run.
 
 - Hilt Codelab: https://developer.android.com/codelabs/android-hilt
 
+- Hilt Test cases : https://developer.android.com/training/dependency-injection/hilt-testing
+
 ## Note
-1 Apart from album list and album detail, Like and Dislike feature is implemented
+  Apart from album list and album detail, Like and Dislike feature is implemented
 
   User can select favorite from option menu.
   
   Album data store in room database so app will work online and offline both.
+
+  Test cases are written for both api and database table insert, verification.
 
 

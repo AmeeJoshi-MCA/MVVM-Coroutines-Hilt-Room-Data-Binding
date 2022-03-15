@@ -69,6 +69,7 @@ class AlbumListFragment : Fragment() {
         viewModel.data.observe(viewLifecycleOwner) {
             if(!selectedFavoriteMenu) {
                 adapter.submitList(it)
+                binding.recyclerView.layoutManager?.scrollToPosition(0)
             }
         }
     }
