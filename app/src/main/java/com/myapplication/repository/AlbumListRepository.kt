@@ -7,13 +7,13 @@ import com.myapplication.database.AlbumDatabase
 import com.myapplication.database.DatabaseAlbumListItem
 import com.myapplication.database.asDomainModel
 import com.myapplication.domain.AlbumItem
-import com.myapplication.network.AlbumListService
+import com.myapplication.network.AlbumService
 import com.myapplication.network.model.asDatabaseModel
 import timber.log.Timber
 import javax.inject.Inject
 
 class AlbumListRepository @Inject constructor(
-    private val albumListService: AlbumListService,
+    private val albumListService: AlbumService,
     private val albumDatabase: AlbumDatabase
 ) {
 

@@ -13,7 +13,7 @@ fun loadImage(view: ImageView, url: String?) {
 }
 
 @BindingAdapter("app:pictureLike")
-fun setTimelineLikeImage(image: ImageView, imageStatus: Boolean) {
+fun setLikeImage(image: ImageView, imageStatus: Boolean) {
     if (imageStatus) {
         image.setImageResource(R.drawable.ic_fav_fill)
     } else {

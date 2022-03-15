@@ -1,8 +1,7 @@
 package com.myapplication.di
 
 import androidx.viewbinding.BuildConfig
-import com.myapplication.network.AlbumDetailsService
-import com.myapplication.network.AlbumListService
+import com.myapplication.network.AlbumService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -41,12 +40,12 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideAlbumApiService(retrofit: Retrofit): AlbumListService =
-        retrofit.create(AlbumListService::class.java)
+    fun provideAlbumApiService(retrofit: Retrofit): AlbumService =
+        retrofit.create(AlbumService::class.java)
 
-    @Provides
-    @Singleton
-    fun provideAlbumDetailsService(retrofit: Retrofit): AlbumDetailsService =
-        retrofit.create(AlbumDetailsService::class.java)
+//    @Provides
+//    @Singleton
+//    fun provideAlbumDetailsService(retrofit: Retrofit): AlbumService =
+//        retrofit.create(AlbumDetailsService::class.java)
 
 }
